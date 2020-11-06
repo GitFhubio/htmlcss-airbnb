@@ -1,0 +1,42 @@
+*{margin:0;
+  padding:0;
+box-sizing:border-box;}
+body {
+  font-family: Arial serif;
+  font-size:20px;
+}
+.container{
+  width:100vw;
+  background-color: #fff;
+padding:5vh 5vw;
+
+}
+
+#cava{background-image: url(../img/cava.jpg);}
+#londra{background-image: url(../img/londra.jpg);}
+#milano{background-image: url(../img/milano.jpg);}
+
+.city {
+  width:100%;
+  margin-bottom:3vh;
+height:100vh;
+background-size: cover ;
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+box-shadow: 2vw 2vh 2vw #000;}
+
+.testo{position: absolute;
+font-size: 4rem;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+color: #fff;}
+
+.layover{height:100%;
+width:100%;
+background-color:rgba(0, 0, 0,0.8);}
+
+.city:hover .layover{
+opacity:0.2;
+}
