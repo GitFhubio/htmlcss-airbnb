@@ -102,7 +102,7 @@ line-height: 10vh;
   top:20vh;
   right:10vw;
   width:30%;
-  height:250px;
+  height:100vh;
   font-size:10px;
 }
 .side h1{font-size:3.2em;
@@ -123,3 +123,8 @@ header ul li:hover .dropdown{display:block;}
 .side p:nth-of-type(2n+3){
   text-decoration:underline;
   text-decoration-color: red;
+
+/* da mobile con la media query al rimpicciolirsi metterei la sidebar di sinistra sotto il main magari
+ e il testo sotto ancora...senza float ha poco senso */
+
+/* l'esercizio tiene conto solo delle variazioni su elementi e testo al variare della viewport */
