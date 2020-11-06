@@ -67,7 +67,7 @@ main{
 .city {
   width:100%;
 height:33.33%;
-margin-bottom:2%;
+margin:3% 3%;
 background-size: cover ;
 background-position: center;
 background-repeat: no-repeat;
@@ -105,7 +105,8 @@ line-height: 10vh;
   margin-top:4vh;
   text-align: center;}
 .side h1{font-size:3em;
-line-height: 3em;}
+line-height: 3em;
+text-shadow: 2px 2px 4px #eee;}
 .side p{
   font-size: 2em;
   line-height:2em;
@@ -119,9 +120,8 @@ opacity:0.2;
 }
 
 header ul li:hover .dropdown{display:block;}
-.side p:nth-of-type(2n+3){
-  text-decoration:underline;
-  text-decoration-color: red;}
+.side p:last-child::first-line{
+  background-color:rgba(255,212,57,.5);}
 
 /* da mobile con la media query al rimpicciolirsi metterei la sidebar di sinistra sotto il main magari
  e il testo sotto ancora...senza float ha poco senso */
