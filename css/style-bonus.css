@@ -7,8 +7,8 @@ body {
 }
 .container{
   width:100vw;
-    background-color: rgb(28,45,61);
-padding:5vh 5vw;}
+  height:100vh;
+    background-color: rgb(28,45,61);}
 .dropdown{
   display:none;
   z-index:1002;
@@ -48,27 +48,33 @@ header ul li a:hover {
 }
 
 main{
-  margin-left:5%;
+  margin-left:5vw;
   margin-top:10vh;
-  width:50%;
-  height:auto;
+  width:95vw;
+  height:90vh;
 }
+
 #cava{background-image: url(../img/cava.jpg);}
 #londra{background-image: url(../img/londra.jpg);}
 #milano{background-image: url(../img/milano.jpg);}
 
+.side{vertical-align:middle;
+  display:inline-block;
+  width:48%;
+  height:100%;
+  font-size:8px;
+}
 .city {
   width:100%;
-  margin-bottom:3vh;
-height:100vh;
+height:33.33%;
+margin-bottom:2%;
 background-size: cover ;
 background-position: center;
 background-repeat: no-repeat;
-position: relative;
-box-shadow: 2vw 2vh 2vw #000;}
+position: relative;}
 
 .testo{position: absolute;
-font-size: 4rem;
+font-size: 3rem;
 top:50%;
 left:50%;
 transform: translate(-50%,-50%);
@@ -80,7 +86,7 @@ color: #fff;}
   left:0;
   top:0;
   background-color: #eee;
-  width:5%;
+  width:5vw;
   height:100vh;
   font-size: 0.7rem;
 }
@@ -92,23 +98,16 @@ height:10vh;
 text-align: center;
 line-height: 10vh;
 }
-
+.side.right{
+  padding-left: 5vw;
+}
 .sidebar .actions .action{
   margin-top:4vh;
-  text-align: center;
-}
-.side{
-  position:absolute;
-  top:20vh;
-  right:10vw;
-  width:30%;
-  height:100vh;
-  font-size:10px;
-}
-.side h1{font-size:3.2em;
-line-height: 3.2em;}
+  text-align: center;}
+.side h1{font-size:3em;
+line-height: 3em;}
 .side p{
-  font-size: 1.5em;
+  font-size: 2em;
   line-height:2em;
 }
 .layover{height:100%;
@@ -122,7 +121,7 @@ opacity:0.2;
 header ul li:hover .dropdown{display:block;}
 .side p:nth-of-type(2n+3){
   text-decoration:underline;
-  text-decoration-color: red;
+  text-decoration-color: red;}
 
 /* da mobile con la media query al rimpicciolirsi metterei la sidebar di sinistra sotto il main magari
  e il testo sotto ancora...senza float ha poco senso */
