@@ -2,16 +2,57 @@
   padding:0;
 box-sizing:border-box;}
 body {
-  font-family: Arial serif;
-  font-size:20px;
+  font-family: 'Roboto', sans-serif;
+  font-size:22px;
 }
 .container{
   width:100vw;
-  background-color: #fff;
-padding:5vh 5vw;
-
+    background-color: rgb(28,45,61);
+padding:5vh 5vw;}
+.dropdown{
+  display:none;
+  z-index:1002;
+  position:absolute;
+  padding:10px;
+  color:#000;
+  font-weight: bold;
+  background-color:#ccc;
+  box-shadow: 3px 3px 10px pink;
 }
 
+header{
+ width:100%;
+ position:fixed;
+ z-index: 1001;
+ transform:translate(-50%);
+ left:50%;
+ background-color: #ccc;
+ top:0;
+ height:10vh;
+}
+
+header ul{
+  margin:0 auto;
+  list-style: none;
+  text-align: center;
+  position:relative;
+}
+header ul li {display:inline-block;
+line-height: 10vh;}
+header ul li a {text-decoration: none;
+background-color: yellow;
+padding:1vh 1vw;
+border-radius:10px 10px 10px 10px;}
+header ul li a:hover {
+  background-color: green;
+}
+
+main{
+  margin-left:5%;
+  margin-top:10vh;
+  width:50%;
+  height:auto;
+}
 #cava{background-image: url(../img/cava.jpg);}
 #londra{background-image: url(../img/londra.jpg);}
 #milano{background-image: url(../img/milano.jpg);}
@@ -32,7 +73,44 @@ top:50%;
 left:50%;
 transform: translate(-50%,-50%);
 color: #fff;}
+.sidebar{
 
+  position:fixed;
+  z-index:1002;
+  left:0;
+  top:0;
+  background-color: #eee;
+  width:5%;
+  height:100vh;
+  font-size: 0.7rem;
+}
+.sidebar a {
+  color:#000;
+}
+.sidebar .hamburger{
+height:10vh;
+text-align: center;
+line-height: 10vh;
+}
+
+.sidebar .actions .action{
+  margin-top:4vh;
+  text-align: center;
+}
+.side{
+  position:absolute;
+  top:20vh;
+  right:10vw;
+  width:30%;
+  height:250px;
+  font-size:10px;
+}
+.side h1{font-size:3.2em;
+line-height: 3.2em;}
+.side p{
+  font-size: 1.5em;
+  line-height:2em;
+}
 .layover{height:100%;
 width:100%;
 background-color:rgba(0, 0, 0,0.8);}
@@ -40,3 +118,8 @@ background-color:rgba(0, 0, 0,0.8);}
 .city:hover .layover{
 opacity:0.2;
 }
+
+header ul li:hover .dropdown{display:block;}
+.side p:nth-of-type(2n+3){
+  text-decoration:underline;
+  text-decoration-color: red;
