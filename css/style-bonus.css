@@ -17,7 +17,7 @@ body {
   display:none;
   z-index:1002;
   position:absolute;
-  padding:10px;
+  padding:2vh;
   color:#000;
   font-weight: bold;
   background-color:#ccc;
@@ -77,7 +77,7 @@ background-repeat: no-repeat;
 position: relative;}
 
 .testo{position: absolute;
-font-size: 3rem;
+font-size: 6vh;
 top:50%;
 left:50%;
 transform: translate(-50%,-50%);
@@ -85,13 +85,14 @@ color: #fff;}
 .sidebar{
 
   position:fixed;
-  z-index:1002;
+  z-index:1001;
+  /* funziona anche 1001 perchè segue la sidebar segue l'header nell'html,1000 no */
   left:0;
   top:0;
   background-color: #eee;
   width:5vw;
   height:100vh;
-  font-size: 0.7rem;
+  font-size:3vw;
 }
 .sidebar a {
   color:#000;
@@ -104,15 +105,20 @@ line-height: 10vh;
 .side.right{
   padding-left: 5vw;
 }
+.sidebar .actions .action div{
+  font-size: 1vw;}
 .sidebar .actions .action{
-  margin-top:4vh;
+  margin-top:10vh;
   text-align: center;}
+  .sidebar .actions .action i{
+    padding-bottom:1vh;
+}
 .side.right h1{padding:3vh 0;
-  font-size:2.5rem;
+  font-size:5vw;
 text-shadow: 2px 2px 4px #eee;}
 .side.right p{
-  font-size: 1.5rem;
-  line-height:2rem;
+  font-size: 3vh;
+  line-height: 3.5vh;
 }
 .layover{height:100%;
 width:100%;
@@ -128,5 +134,6 @@ header ul li:hover .dropdown{display:block;}
 
 /* da mobile con la media query al rimpicciolirsi metterei la sidebar di sinistra sotto il main magari
  e il testo sotto ancora...senza float ha poco senso */
-
 /* l'esercizio tiene conto solo delle variazioni su elementi e testo al variare della viewport */
+/* usando vw anche per il font la leggibilità diventa ardua su dispositivi mobili,
+ ho solo fatto un test  */
